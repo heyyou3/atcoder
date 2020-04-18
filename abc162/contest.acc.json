@@ -13,7 +13,7 @@
       "directory": {
         "path": "a",
         "testdir": "tests",
-        "submit": "main.pl"
+        "submit": "main.go"
       }
     },
     {
@@ -24,7 +24,7 @@
       "directory": {
         "path": "b",
         "testdir": "tests",
-        "submit": "main.pl"
+        "submit": "main.go"
       }
     },
     {
@@ -35,7 +35,7 @@
       "directory": {
         "path": "c",
         "testdir": "tests",
-        "submit": "main.pl"
+        "submit": "main.go"
       }
     },
     {
@@ -46,7 +46,7 @@
       "directory": {
         "path": "d",
         "testdir": "tests",
-        "submit": "main.pl"
+        "submit": "main.go"
       }
     },
     {
@@ -57,7 +57,7 @@
       "directory": {
         "path": "e",
         "testdir": "tests",
-        "submit": "main.pl"
+        "submit": "main.go"
       }
     },
     {
@@ -68,7 +68,7 @@
       "directory": {
         "path": "f",
         "testdir": "tests",
-        "submit": "main.pl"
+        "submit": "main.go"
       }
     }
   ]
