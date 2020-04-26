@@ -24,7 +24,7 @@
       "directory": {
         "path": "b",
         "testdir": "tests",
-        "submit": "main.go"
+        "submit": "src/main.rs"
       }
     },
     {
