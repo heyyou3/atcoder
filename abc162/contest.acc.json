@@ -13,7 +13,7 @@
       "directory": {
         "path": "a",
         "testdir": "tests",
-        "submit": "main.go"
+        "submit": "src/main.rs"
       }
     },
     {
