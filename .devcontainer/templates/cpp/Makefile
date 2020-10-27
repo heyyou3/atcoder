@@ -17,3 +17,8 @@ test: build
 		echo "Run sample-$$count.in";\
 		bash -c "diff <(./${Q}/${OUT_FILE} < "./${Q}/tests/sample-$$count.in") <(cat "./${Q}/tests/sample-$$count.out")";\
 	done
+
+submit:
+	cd ./${Q} && \
+	acc submit && \
+	cd -
