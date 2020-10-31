@@ -1,0 +1,13 @@
+{
+    "task": {
+        "program": [
+            "main.cpp"
+        ],
+        "submit": "main.cpp"
+    },
+    "contest": {
+        "static": [
+            "./Makefile"
+        ]
+    }
+}
