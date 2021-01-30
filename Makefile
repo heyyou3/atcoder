@@ -1,6 +1,6 @@
 PHONY: create
 
 setup:
-	sudo chown -R vscode:vscode /home/vscode/.config
-	acc config default-template cpp
+	cp -r ./templates/python $(HOME)/.config/atcoder-cli-nodejs/
+	acc config default-template python
 	acc login
