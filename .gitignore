@@ -1,1 +1,4 @@
 target
+!.SpaceVim.d
+.SpaceVim.d/*
+!.SpaceVim.d/snippets

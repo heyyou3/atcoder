@@ -1,0 +1,29 @@
+snippet     ife
+abbr        if cond: ... else: ...
+options     word
+	if ${1}:
+	  ${2}
+	else:
+	  pass
+
+snippet     inpi
+abbr        int(input())
+options     word
+	int(input())
+
+snippet     inpsp
+abbr        input().split(' ')
+options     word
+	input().split(' ')
+
+snippet     inpspi
+abbr        [int(x) for x in input().split(' ')]
+options     word
+	[int(x) for x in input().split(' ')]
+
+snippet     inpfor
+abbr        n に対応した入力を受け取る
+options     word
+	n = int(input())
+	for x in range(n):
+	  ${1}
