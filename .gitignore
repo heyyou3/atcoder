@@ -2,3 +2,5 @@ target
 !.SpaceVim.d
 .SpaceVim.d/*
 !.SpaceVim.d/snippets
+!.SpaceVim.d/tasks.toml
+!.SpaceVim.d/tasks_sh
