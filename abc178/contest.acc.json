@@ -31,13 +31,23 @@
       "id": "abc178_c",
       "label": "C",
       "title": "Ubiquity",
-      "url": "https://atcoder.jp/contests/abc178/tasks/abc178_c"
+      "url": "https://atcoder.jp/contests/abc178/tasks/abc178_c",
+      "directory": {
+        "path": "c",
+        "testdir": "tests",
+        "submit": "main.py"
+      }
     },
     {
       "id": "abc178_d",
       "label": "D",
       "title": "Redistribution",
-      "url": "https://atcoder.jp/contests/abc178/tasks/abc178_d"
+      "url": "https://atcoder.jp/contests/abc178/tasks/abc178_d",
+      "directory": {
+        "path": "d",
+        "testdir": "tests",
+        "submit": "main.py"
+      }
     },
     {
       "id": "abc178_e",
