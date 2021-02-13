@@ -6,20 +6,25 @@ options     word
 	else:
 	  pass
 
-snippet     inpi
-abbr        int(input())
+snippet     ret
+abbr        return
 options     word
-	int(input())
+	return ${1}
+
+snippet     inpi
+abbr        n = int(input())
+options     word
+	n = int(input())
 
 snippet     inpsp
 abbr        input().split(' ')
 options     word
-	input().split(' ')
+	s_list = input().split(' ')
 
 snippet     inpspi
-abbr        [int(x) for x in input().split(' ')]
+abbr        a, b = [int(x) for x in input().split(' ')]
 options     word
-	[int(x) for x in input().split(' ')]
+	a, b = [int(x) for x in input().split(' ')]
 
 snippet     inpfor
 abbr        n に対応した入力を受け取る
