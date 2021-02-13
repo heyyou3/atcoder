@@ -1,0 +1,15 @@
+# use Variables
+# ${workspaceFolder}: - /home/your-username/your-project/
+# ${workspaceFolderBasename}: - your-project
+# ${file}: - /home/your-username/your-project/folder/file.ext
+# ${relativeFile}: - folder/file.ext
+# ${relativeFileDirname}: - folder/
+# ${fileBasename}: - file.ext
+# ${fileBasenameNoExtension}: - file
+# ${fileDirname}: - /home/your-username/your-project/folder/
+# ${fileExtname}: - .ext
+# ${lineNumber}: - line number of the cursor
+[jump-problem]
+    command = "perl -E '$fd_name=\"${relativeFileDirname}\";$fd_name=~s/\\//_/;@ps_arr=split(/_/,$fd_name);$url=\"https://atcoder.jp/contests/\".$ps_arr[0].\"/tasks/\".$fd_name;system(\"xdg-open \".$url)'"
+[test]
+    command = ".SpaceVim.d/tasks_sh/test_cmd.sh ${relativeFileDirname}"
