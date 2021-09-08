@@ -16,6 +16,8 @@ stdenv.mkDerivation {
     '';
 
     installPhase = ''
+    pip install online-judge-tools
+    npm install -g atcoder-cli
     '';
 
     shellHook = ''
