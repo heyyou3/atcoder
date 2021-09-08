@@ -2,12 +2,15 @@
 # https://search.nixos.org/packages
 with import <nixpkgs> {};
 
-stdenv.mkDerivation {
+let
+  my-python-packages = python-packages: with python-packages; [
+      online-judge-tools
+  ];
+  python-with-my-packages = python3.withPackages my-python-packages;
+in stdenv.mkDerivation {
     name = "atcoder";
     buildInputs = [
         nodejs
-        python39
-        python39Packages.pip
     ];
 
     src = ./.;
@@ -16,7 +19,7 @@ stdenv.mkDerivation {
     '';
 
     installPhase = ''
-    pip install online-judge-tools
+    pip install --user online-judge-tools
     npm install -g atcoder-cli
     '';
 
