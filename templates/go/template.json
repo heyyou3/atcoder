@@ -1,0 +1,15 @@
+{
+    "task": {
+        "program": [
+            "main.go"
+        ],
+        "submit": "main.go"
+    },
+    "contest": {
+        "static": [
+            "./Makefile",
+            "./main_test.go",
+            "./go.mod"
+        ]
+    }
+}
