@@ -1,14 +1,11 @@
-PHONY:	run test submit
-SHELL=/bin/bash
+PHONY:	run submit
 
-q=a
+PROB=a
 
 run:
-	@go $(q)/main.go
-
-INPUTS = ./${q}/tests/sample-*.in
+	@go run $(PROB)/main.go
 
 submit:
-	cd ./${q} && \
+	cd ./${PROB} && \
 	acc submit && \
 	cd -

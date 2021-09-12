@@ -1,8 +1,10 @@
 {
     "task": {
         "program": [
-            "main.go",
-            "./main_test.go"
+            "main.go"
+        ],
+        "static": [
+            "main_test.go"
         ],
         "submit": "main.go"
     },
