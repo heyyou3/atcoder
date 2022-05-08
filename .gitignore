@@ -1,3 +1,6 @@
 target
 !shell.nix
 !.envrc
+build
+.idea
+.gradle
