@@ -1,21 +1,18 @@
 package abc184.b
 
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Test
+import io.kotest.core.spec.style.DescribeSpec
+import io.kotest.matchers.shouldBe
 
-internal class MainTest {
-    @Test
-    fun testCase1() {
-        assertEquals(0, Resolver.solve(listOf(3, 0), "xox"))
+class ResolverTest : DescribeSpec({
+    describe("abc184 b") {
+        it("test case 1") {
+            0 shouldBe Resolver.solve(listOf(3, 0), "xox")
+        }
+        it("test case 2") {
+            200017 shouldBe Resolver.solve(listOf(20, 199999), "oooooooooxoooooooooo")
+        }
+        it("test case 3") {
+            0 shouldBe Resolver.solve(listOf(20, 10), "xxxxxxxxxxxxxxxxxxxx")
+        }
     }
-
-    @Test
-    fun testCase2() {
-        assertEquals(200017, Resolver.solve(listOf(20, 199999), "oooooooooxoooooooooo"))
-    }
-
-    @Test
-    fun testCase3() {
-        assertEquals(0, Resolver.solve(listOf(20, 10), "xxxxxxxxxxxxxxxxxxxx"))
-    }
-}
+})
