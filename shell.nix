@@ -11,6 +11,7 @@ in stdenv.mkDerivation {
     name = "atcoder";
     buildInputs = [
         nodejs
+        python-with-my-packages
     ];
 
     src = ./.;
