@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.0"
+    kotlin("jvm") version "1.3.71"
 }
 
 group = "org.example"
@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation("io.kotest:kotest-runner-junit5-jvm:4.6.0")
+    implementation("io.kotest:kotest-runner-junit5-jvm:4.0.0")
 }
 
 tasks.test {
